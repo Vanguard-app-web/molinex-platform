@@ -14,3 +14,6 @@ pnpm-debug.log*
 coverage/
 dist/
 *.log
+
+# Private runtime data of the mock API (credential hashes, sessions, commercial inquiries).
+*.private.json
