@@ -7,7 +7,8 @@ const currentDirectory = path.dirname(fileURLToPath(import.meta.url));
 
 const config = new MockApiServerConfig({
     port: process.env.PORT || 3000,
-    dbPath: process.env.JSON_SERVER_DB_PATH || path.join(currentDirectory, 'db.json')
+    dbPath: process.env.JSON_SERVER_DB_PATH || path.join(currentDirectory, 'db.json'),
+    commercialContentPath: process.env.COMMERCIAL_CONTENT_PATH
 });
 
 new MockApiServer(config).start();
